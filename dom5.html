@@ -1,0 +1,82 @@
+<style>
+    h1{
+        padding-top:20px;
+    }
+    
+   input{
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    border-radius: 50px;
+    background-color: bisque;
+    border-color: aqua;
+    text-shadow: 20px;
+   }
+   h2{
+    padding: 20px;
+    border-color:rgb(97, 144, 201) ;
+   }
+   button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(129, 189, 238);
+   }
+   body{
+    background-color: rgb(208, 194, 207);
+
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+
+
+  
+   }
+   @keyframes fadeIn {
+        to{
+            opacity: 1;
+        }
+    }
+   div{
+    background-color: bisque;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 30px;
+   }
+   
+
+
+</style>
+
+
+<center>
+    <div>
+<h1>ADDITION NUMBER  </h1>
+
+<input id="num1" placeholder="Enter the  first number">
+<input id="num2" placeholder="Enter the second number">
+<button   id="btn"  onclick="addresult()">ADD VALUE</button>
+<h2 id="result">Result</h2>
+    </div>
+</center>
+
+
+<script>
+
+    var num1=document.getElementById("num1")
+    var num2=document.getElementById("num2")
+
+    var result=document.getElementById("result")
+  //  var btn=document.getElementById("btn")
+
+
+    function addresult(){
+
+        var box1value=Number(num1.value)
+        var box2value=Number(num2.value)
+
+        var resultvalue=box1value+
+        box2value
+
+        result.textContent=resultvalue
+    }
+   
+</script>
